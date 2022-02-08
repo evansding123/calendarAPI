@@ -7,6 +7,7 @@ const router = require('express').Router();
 
 router.get('/doctorList', controller.getDoctorList.getList);
 router.get('/apptList', controller.getAppts.getAppointments);
+router.delete('/deleteAppt', controller.deleteAppt.deleteAppt);
 
 
 

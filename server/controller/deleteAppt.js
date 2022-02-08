@@ -2,13 +2,16 @@ const models = require('../models/getLists.js');
 
 
 module.exports = {
-  getList: async (req, res) => {
+  deleteAppt: async (req, res) => {
     //get a list of doctors from the database
     try {
 
-      const queryData = await models.getList();
+      let name = req.body.Name;
+      let id = req.body.ID;
+
+      const queryData = await models.deleteAppt(name, id);
       console.log(queryData)
-      res.status(200).send(queryData);
+      res.status(202).send(queryData);
 
     } catch(error) {
       res.status(404).send(error);

@@ -1,4 +1,4 @@
-const models = require('../models/getDoctorList.js');
+const models = require('../models/getLists.js');
 
 
 module.exports = {
