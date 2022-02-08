@@ -1,0 +1,22 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "environment for test",
+  "main": "helloWorld.js",
+  "scripts": {
+    "start": "node helloWorld.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evansding123/helloWorld.git"
+  },
+  "author": "Evans Ding",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evansding123/helloWorld/issues"
+  },
+  "homepage": "https://github.com/evansding123/helloWorld#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
