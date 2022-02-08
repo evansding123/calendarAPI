@@ -1,0 +1,24 @@
+{
+  "123": {
+    "Name": "Bob Jones",
+    "Appointments": {
+      "543": {
+        "Patient": "Billy Bobby",
+        "Date": "January 1, 2022",
+        "Time": "11:30AM",
+        "Kind": "New"
+      }
+    }
+  },
+  "321": {
+    "Name": "Alice Kim",
+    "Appointments": {
+      "543": {
+        "Patient": "Billy Bobby",
+        "Date": "January 1, 2022",
+        "Time": "11:30AM",
+        "Kind": "New"
+      }
+    }
+  }
+}

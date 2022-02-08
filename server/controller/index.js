@@ -1,0 +1,1 @@
+module.exports.getDoctorList = require('./getDoctorList.js')
