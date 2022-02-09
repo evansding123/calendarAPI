@@ -16,7 +16,7 @@ const doctorList = {
   "321": {
     "Name": "Alice Kim",
     "Appointments": {
-      "543": {
+      "548": {
         "Patient": "Billy Bobby",
         "Date": "January 1, 2022",
         "Time": "11:30AM",
@@ -77,7 +77,7 @@ module.exports = {
          for(let ids in apptList) {
            if(ids === id) {
             delete apptList[id];
-            //console.log(doctorList)
+            console.log(doctorList)
            }
          }
        }
@@ -87,6 +87,31 @@ module.exports = {
     } catch(error) {
       throw(error);
     }
+  },
+
+  addAppt: async (name, appt, time) => {
+    try {
+
+      let count = 0;
+
+
+      for(let keys in doctorList) {
+        if(doctorList[keys].Name === name) {
+
+          for(let id in appt) {
+
+            doctorList[keys].Appointments[id] = appt;
+          }
+
+        }
+      }
+      console.log(doctorList);
+      return appt;
+    } catch (error){
+      //throw(error)
+    }
+
+
   }
 
 
